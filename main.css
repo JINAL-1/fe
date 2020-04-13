@@ -140,10 +140,7 @@ color:#007BFF;
 	grid-gap: 5px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr; 
-   /* grid-template-rows: repeat(3, 1fr);
-	  grid-column-gap: 1px;
-	  grid-row-gap: 1px;*/
-      }
+         }
 
 
 .info{
@@ -153,10 +150,12 @@ color:#007BFF;
 	grid-gap: 5px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr  ; 
-   /* grid-template-rows: repeat(3, 1fr);
-	  grid-column-gap: 1px;
-	  grid-row-gap: 1px;*/
-      }
+         }
+
+.info div ul li
+{
+	list-style: none;
+}
 
 /*7 images can be responsive placing it into an assigned folder*/
 
