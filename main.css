@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Grid latout is used as the content is divided into grids with equal apacing*/
 * {
   box-sizing: border-box; 
 }
@@ -28,6 +29,10 @@ img {
 /*button styles*/ 
 
 /* EXPLAIN THIS STYLE RULE (1 mark) */ 
+
+/*the section named pricing table has three buttons that have been styled as 
+padding top and bottom 8px with left and right padded 16px
+font size is 20px border of radius 5px*/
 
 .pricingTable button {
   padding: .5rem 1rem;
