@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 10px; 
+  height: 100%; 
+}
+
+body {
+  height: 100%; 
+	font-size: 1.25rem;
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto; 
+}
+
+img {
+  max-width: 100%; 
+}
+
+
+/*button styles*/ 
+
+/* EXPLAIN THIS STYLE RULE (1 mark) */ 
+
+.pricingTable button {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+
+
+.pricingTable section:first-of-type button {
+  border: 1px solid #007bff;  
+}
+
+
+/* FIX THIS STYLE RULE  (2 marks) */ 
+
+/* there was a comma missing due to which the style rule was not applied*/
+
+.pricingTable section:nth-child(2)> button,
+.pricingTable section:nth-child(3)> button 
+{
+  color: #fff; 
+  border: transparent; 
+ background-color:#007BFF ; 
+	
+}
+
+/*5 Incorporate an appropriate Google font and integrate
+the web font included in the assets folder*/
+@font-face {
+		font-family: 'OpenSans-Regular';
+    src: url('../assets/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+   box-sizing: border-box;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+	flex-direction: row;
+	align-items: center;
+    padding: 1rem 1.5rem;
+	 width: 100%;
+	 /*overflow: hidden;*/
+	 }
+
+.container p{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height:1.2;
+	margin-left: 0.6rem;
+	display :block;
+}
+  
+  nav ul{
+	  margin: 0px;
+	 padding: 0px;
+	/*creates in a row*/
+	display: flex;
+	list-style: none;
+	  color: black;
+	  
+}
+
+nav ul li a:hover
+  {
+      color:black;
+      text-decoration: underline;
+  }
+
+nav > ul > li:nth-child(1){
+	flex-grow: 0.25;
+	margin-left: 105rem;
+}
+nav > ul > li:nth-child(2) {flex-grow: 0.25;}
+nav > ul > li:nth-child(3) {flex-grow: 0.25;}
+nav > ul > li:nth-child(4) {flex-grow: 0.25;}
+nav > ul > li:nth-child(5)
+{
+	flex-grow: 0;
+	/*display: inline-block;*/
+	box-sizing: border-box;
+	border:1px solid rgba(31,90,201,1.00) /*transparent*/;
+	padding: .375rem .75rem;
+    /*font-size: 1rem;*/
+    line-height: 1.5;
+    border-radius: .25rem;
+    /*transition: color .15s;*/
+}
+
+nav ul .sign a:link
+{
+color:#007BFF;
+}
+
+.sign a:visited,
+.sign a:focus,
+.sign  a:hover,
+.sign  a:active
+{
+  color: black;
+ background-color:#007BFF;
+}
+
+.pricingTable{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	grid-gap: 5px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; 
+   /* grid-template-rows: repeat(3, 1fr);
+	  grid-column-gap: 1px;
+	  grid-row-gap: 1px;*/
+      }
+
+
+.info{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	grid-gap: 5px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr  ; 
+   /* grid-template-rows: repeat(3, 1fr);
+	  grid-column-gap: 1px;
+	  grid-row-gap: 1px;*/
+      }
+
+/*7 images can be responsive placing it into an assigned folder*/
+
+/*8*/
+
+.bannerimage{
+	background-image: url('https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80');
+	background-position: center;
+	background-attachment: fixed;
+	height:450px;
+	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
+.bannerimage h1{
+	color:#2434CE;
+	text-align: center;
+	padding:30px 25px;
+	font-size: 40px;
+}
+
+.bannerimage p{
+	font-size: 20px;
+	color:#000000;
+	padding:25px 20px 25px 25px;
+	text-align:center;
+	}
+
+/*9
+<meta name="viewport" content="width=device-width, initial-scale=1">*/
+
+/*10*/
+@media screen and (min-width: 600px) { 
+ 
+	.pricingtable .one,
+	.pricingtable .two,
+	.pricingtable .three
+	 {
+        width: 33%; 
+  }
+	
+  .info .feature,
+.info .resources,
+.pricingtable .about
+	 {
+        width: 33%; 
+  } 
+}
